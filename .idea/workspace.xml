@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6485c-66d7-41d1-b4d4-0af053394d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/p0002.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/p0003.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/p0003.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/p0003.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +55,6 @@
     <property name="settings.editor.selected.configurable" value="inlay.hints" />
   </component>
   <component name="RunManager" selected="Cargo.Run">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package leetcode --bin leetcode" />
@@ -104,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607352647550</updated>
       <workItem from="1607352649765" duration="1058000" />
-      <workItem from="1607364567170" duration="7872000" />
+      <workItem from="1607364567170" duration="8274000" />
+      <workItem from="1607377561290" duration="9190000" />
     </task>
     <servers />
   </component>
@@ -128,13 +123,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/p0003.rs</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
+          <line>60</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/p0003.rs</url>
-          <line>21</line>
-          <option name="timeStamp" value="6" />
+          <line>90</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
