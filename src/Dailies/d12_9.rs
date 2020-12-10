@@ -117,6 +117,7 @@ impl BSTIterator {
     }
 
     fn has_next(&self) -> bool {
+        self.first ||
         !(
             self.parents.is_empty()
                 || self.parents.iter().all(|n| n.is_right())
