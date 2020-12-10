@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6485c-66d7-41d1-b4d4-0af053394d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/p0005.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dailies/d12_9.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dailies/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -55,11 +56,6 @@
     <property name="settings.editor.selected.configurable" value="inlay.hints" />
   </component>
   <component name="RunManager" selected="Cargo.Run">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package leetcode --bin leetcode" />
@@ -82,6 +78,11 @@
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
@@ -107,6 +108,7 @@
       <workItem from="1607377561290" duration="9244000" />
       <workItem from="1607443937840" duration="5023000" />
       <workItem from="1607470954562" duration="4284000" />
+      <workItem from="1607562161709" duration="6678000" />
     </task>
     <servers />
   </component>
@@ -130,7 +132,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/main.rs</url>
-          <line>9</line>
+          <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
