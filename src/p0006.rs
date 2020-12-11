@@ -8,22 +8,22 @@ impl Solution {
         }
         let num_rows = num_rows as usize;
         let hop = 2 * num_rows - 2;
-        let chars: Vec<char> = s.chars().collect();
-        s.clear();
+        let chars = s.as_bytes();
+        let mut val = String::with_capacity(s.len());
         for r in 0..num_rows {
             let slant_offset = hop - 2 * r;
             let mut i = r;
             while i < chars.len() {
-                s.push(chars[i]);
+                val.push(char::from(chars[i]));
                 if slant_offset != 0 && slant_offset != hop {
                     let slant_i = i + slant_offset;
                     if slant_i < chars.len() {
-                        s.push(chars[slant_i]);
+                        val.push(char::from(chars[slant_i]));
                     }
                 }
                 i += hop;
             }
         }
-        s
+        val
     }
 }
