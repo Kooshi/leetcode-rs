@@ -5,6 +5,7 @@
 //mod p0010;
 mod p0005;
 mod Dailies;
+mod p0006;
 
 fn main() {
    let test = p0005::Solution::longest_palindrome(String::from("aaaa"));
