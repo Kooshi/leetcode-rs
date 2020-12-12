@@ -10,11 +10,11 @@ mod dailies;
 //mod p0006;
 //mod p0007;
 //mod p0008;
-mod p0009;
+//mod p0009;
 //mod p0010;
 
 
 fn main() {
-    let test = p0009::Solution::is_palindrome(121);
+    //let test = p0009::Solution::is_palindrome(121);
     println!("{}","");
 }
