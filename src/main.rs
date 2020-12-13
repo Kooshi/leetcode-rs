@@ -2,6 +2,7 @@
 #![allow(dead_code)]
 
 mod dailies;
+mod weeklies;
 //mod p0001;
 //mod p0002;
 //mod p0003;
