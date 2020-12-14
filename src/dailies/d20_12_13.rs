@@ -4,47 +4,70 @@ struct Solution;
 
 //problem 312
 use std::collections::HashMap;
-impl Solution {
-    pub fn max_coins(nums: Vec<i32>) -> i32 {
-        if nums.is_empty(){
-            return 0;
+use std::iter::FromIterator;
+
+struct Balloons<'a>{
+    nums: &'a[i32],
+    remaining: Vec<usize>
+}
+impl<'a> Balloons<'a> {
+    fn new(nums: &'a [i32]) -> Self {
+        Self {
+            nums,
+            remaining: Vec::from_iter(0..nums.len()),
         }
-        let mut dp = HashMap::new();
-        Solution::max_coins_recurse(&nums, &mut dp)
     }
 
-    fn max_coins_recurse(nums: &[i32], dp: &mut HashMap<Vec<i32>, i32>) -> i32 {
-        match nums.len() {
-            1 => nums[0],
-            2 => nums[0] * nums[1] + nums[0].max(nums[1]),
+    fn pop(&self, i: usize) -> (Self, i32) {
+        let mut remaining = self.remaining.clone();
+        let i = remaining.remove(i);
+        let left = remaining.iter().filter(|v| **v < i).max().map(|l| self.nums[*l]).unwrap_or(1);
+        let right = remaining.iter().filter(|v| **v > i).min().map(|l| self.nums[*l]).unwrap_or(1);
+
+        (Self {
+            nums: self.nums,
+            remaining
+        },
+         left * self.nums[i] * right
+        )
+    }
+
+    fn score(&self) -> i32 {
+        self.score_recurse(&mut HashMap::new())
+    }
+
+    fn score_recurse(&self, dp: &mut HashMap<Vec<i32>, i32>) -> i32 {
+        match self.remaining.len() {
+            0 => 0,
+            1 => self.nums[self.remaining[0]],
+            2 => self.nums[self.remaining[0]] * self.nums[self.remaining[1]]
+                + self.nums[self.remaining[0]].max(self.nums[self.remaining[1]]),
             _ => {
                 let mut max = 0;
-                for i in 0..nums.len() {
-                    let slice = [&nums[0..i], &nums[i + 1..]].concat() as Vec<i32>;
-
-                    let mut score = 1;
-                    if i != 0 {
-                        score *= nums[i - 1];
-                    }
-                    score *= nums[i];
-                    if i != (nums.len() - 1) {
-                        score *= nums[i + 1];
-                    }
-
-                    if dp.contains_key(&slice) {
-                        score += dp[&slice];
+                for i in 0..self.remaining.len() {
+                    let (new_b, mut score) = self.pop(i);
+                    let rem: Vec<i32> = new_b.remaining.iter().map(|i| self.nums[*i]).collect();
+                    if dp.contains_key(&rem) {
+                        score += dp[&rem];
                     } else {
-                        let sub_score = Solution::max_coins_recurse(&slice, dp);
-                        dp.insert(slice, sub_score);
+                        let sub_score = new_b.score_recurse(dp);
+                        dp.insert(rem, sub_score);
                         score += sub_score;
                     }
+
                     if score > max {
-                        max = score;
+                        max = score
                     }
                 }
                 max
             }
         }
+    }
+}
+
+impl Solution {
+    pub fn max_coins(nums: Vec<i32>) -> i32 {
+        Balloons::new(&nums).score()
     }
 }
 
@@ -55,7 +78,13 @@ mod tests {
 
     #[test]
     fn it_works() {
+        //36s
         let foo = Solution::max_coins(vec![8,3,4,3,5,0,5,6,6,2,8,5,6,2,3,8,3,5,1,0,2]);
+    }
+
+    #[test]
+    fn long() {
+        assert_eq!( Solution::max_coins(vec![5,7,8,1]), 336);
     }
 
     #[test]

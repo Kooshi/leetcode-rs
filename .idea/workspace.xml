@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6485c-66d7-41d1-b4d4-0af053394d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dailies/d20_12_13.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dailies/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dailies/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dailies/d20_12_13.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dailies/d20_12_13.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test dailies::d20_12_13::tests::long" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package leetcode --bin leetcode dailies::d20_12_13::tests::long -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test dailies::d20_12_13::tests::test_map_array" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package leetcode --bin leetcode dailies::d20_12_13::tests::test_map_array -- --exact" />
@@ -121,25 +131,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="check" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="check" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo.Test dailies::d20_12_13::tests::it_works" />
+        <item itemvalue="Cargo.Test dailies::d20_12_13::tests::long" />
         <item itemvalue="Cargo.Test dailies::d20_12_13::tests::test_map_array" />
         <item itemvalue="Cargo.Test weeklies::w219::tests::it_works" />
         <item itemvalue="Cargo.Test dailies::d20_12_12::tests::it_works" />
-        <item itemvalue="Cargo.check" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +166,7 @@
       <workItem from="1607809371003" duration="7807000" />
       <workItem from="1607826220059" duration="6226000" />
       <workItem from="1607867934573" duration="3357000" />
-      <workItem from="1607954809462" duration="6254000" />
+      <workItem from="1607954809462" duration="18306000" />
     </task>
     <servers />
   </component>
