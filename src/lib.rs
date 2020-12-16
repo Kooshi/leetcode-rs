@@ -2,8 +2,8 @@
 #![allow(dead_code)]
 
 
-// #![feature(test)]
-// extern crate test;
+#![feature(test)]
+extern crate test;
 
 // #[cfg(test)]
 // mod tests {
@@ -19,6 +19,7 @@
 //     //     b.iter(|| )
 //     // }
 // }
+// struct Solution;
 
 // mod p0001;
 // mod p0002;
@@ -30,9 +31,7 @@
 // mod p0008;
 // mod p0009;
 // mod p0010;
-// mod p0011;
-
-mod p0977;
+ mod p0011;
 
 
 
