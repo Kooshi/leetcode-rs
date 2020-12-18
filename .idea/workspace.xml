@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6485c-66d7-41d1-b4d4-0af053394d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/p0012.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/p0013.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p0014.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p0454.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
@@ -60,7 +60,12 @@
       <recent name="C:\Users\Patrick\source\repos\leetcode-rs\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test p0011::tests::it_works">
+  <component name="RunManager" selected="Cargo.Test p0454::tests::it_works">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package leetcode --bin leetcode" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -103,8 +108,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test dailies::d20_12_13::tests::test_map_array" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --bin leetcode dailies::d20_12_13::tests::test_map_array -- --exact" />
+    <configuration name="Test p0011::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib p0011::tests::it_works -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -117,8 +122,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test p0011::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib p0011::tests::it_works -- --exact" />
+    <configuration name="Test p0454::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib p0454::tests::it_works -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -145,18 +150,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test p0454::tests::it_works" />
         <item itemvalue="Cargo.Test p0011::tests::it_works" />
         <item itemvalue="Cargo.Test p0977::tests::it_works" />
         <item itemvalue="Cargo.Test dailies::d20_12_13::tests::it_works" />
         <item itemvalue="Cargo.Test dailies::d20_12_13::tests::long" />
-        <item itemvalue="Cargo.Test dailies::d20_12_13::tests::test_map_array" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,8 @@
       <workItem from="1607990980773" duration="883000" />
       <workItem from="1608074174208" duration="6655000" />
       <workItem from="1608132331773" duration="3487000" />
-      <workItem from="1608150331997" duration="3995000" />
+      <workItem from="1608150331997" duration="4252000" />
+      <workItem from="1608235556652" duration="5488000" />
     </task>
     <servers />
   </component>
