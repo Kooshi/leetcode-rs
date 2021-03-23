@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c6485c-66d7-41d1-b4d4-0af053394d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/p0015.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p0556.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p1694.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/p1695.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
@@ -59,23 +61,9 @@
       <recent name="C:\Users\Patrick\source\repos\leetcode-rs\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test p0015::tests::it_works">
+  <component name="RunManager" selected="Cargo.Test weekly::tests::it_works">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package leetcode --bin leetcode" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test dailies::d20_12_13::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --bin leetcode dailies::d20_12_13::tests::it_works -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -144,6 +132,20 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test weekly::tests::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib weekly::tests::it_works -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -151,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test weekly::tests::it_works" />
         <item itemvalue="Cargo.Test p0015::tests::it_works" />
         <item itemvalue="Cargo.Test p0454::tests::it_works" />
         <item itemvalue="Cargo.Test p0011::tests::it_works" />
         <item itemvalue="Cargo.Test p0977::tests::it_works" />
-        <item itemvalue="Cargo.Test dailies::d20_12_13::tests::it_works" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +192,9 @@
       <workItem from="1608132331773" duration="3487000" />
       <workItem from="1608150331997" duration="4252000" />
       <workItem from="1608235556652" duration="5521000" />
-      <workItem from="1608303317694" duration="3152000" />
+      <workItem from="1608303317694" duration="3813000" />
+      <workItem from="1608430286163" duration="6612000" />
+      <workItem from="1608745273729" duration="454000" />
     </task>
     <servers />
   </component>
